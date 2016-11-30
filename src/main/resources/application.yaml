@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/carx
+    username: carx
+    password: carx
+    driver-class-name: org.postgresql.Driver
+  data:
+    cassandra:
+      contact-points: localhost
+      port: 9042
+      keyspace-name: carx
+      schema-action: CREATE_IF_NOT_EXISTS
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: validate
